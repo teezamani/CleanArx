@@ -10,7 +10,7 @@ builder.Services.AddControllers();
 
 //Dependency Injection for the services
 builder.Services.AddInfrastructureDI();
-builder.Services.AddApplicationDI();
+builder.Services.AddApplicationDI(builder.Configuration);
 
 var app = builder.Build();
 
